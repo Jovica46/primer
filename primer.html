@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Program za obavljanje osnovnih aritmetičkih operacija</title>
+<style>
+     body {
+         background-color: turquoise;
+         color: rgb(44, 11, 11);
+         font-size: xx-large;
+     }
+</style>
+</head>
+
+<body>
+
+    <script>
+         
+        var x = prompt("Unesite broj x");
+
+        var z = prompt("Unesite karakter računske operacije: +, -, *, / ."); 
+        
+        var sum = null;
+         
+        switch (z) {
+            case "+":
+            var y = prompt("Unesite broj y");
+            var sum = parseInt(x) + parseInt(y);
+            break;
+
+            case "-":
+            var y = prompt("Unesite broj y");
+            var sum = parseInt(x) - parseInt(y);
+            break;
+
+            case "*":
+            var y = prompt("Unesite broj y");
+            var sum = parseInt(x) * parseInt(y);
+            break;
+
+            case "/":
+            var y = prompt("Unesite broj y");
+            var sum = parseInt(x) / parseInt(y);
+            break;
+
+            default:
+            alert("Nepoznati karakter računske operacije");
+        }
+
+        alert("Rezultat je: " + sum);
+
+        document.write("Rezultat je: " + sum);
+  
+    </script>
+
+</body>
+</html>
